@@ -1,5 +1,7 @@
 package dev.pamparampam;
 
+import dev.pamparampam.utils.ProgramList;
+
 public class Wishlist extends ProgramList {
 
     @Override

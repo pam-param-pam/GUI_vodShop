@@ -1,8 +1,8 @@
 package dev.pamparampam.Films;
 
 import dev.pamparampam.Client;
-import dev.pamparampam.Price;
-import dev.pamparampam.Pricelist;
+import dev.pamparampam.utils.Price;
+import dev.pamparampam.utils.Pricelist;
 import dev.pamparampam.utils.GENRE;
 
 import java.util.Objects;

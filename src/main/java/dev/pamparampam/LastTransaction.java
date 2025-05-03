@@ -1,10 +1,10 @@
 package dev.pamparampam;
 
 import dev.pamparampam.Films.ClientProgram;
+import dev.pamparampam.utils.ProgramList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LastTransaction extends ProgramList {
@@ -31,6 +31,7 @@ public class LastTransaction extends ProgramList {
 
     @Override
     public void setPrograms(ArrayList<ClientProgram> programs) {
+        clearPrograms();
         for (ClientProgram program : programs) {
             addProgram(program);
         }
@@ -50,18 +51,12 @@ public class LastTransaction extends ProgramList {
     public Double getPaidPrice(ClientProgram program) {
         for (Map.Entry<ClientProgram, Double> entry : paidPrices.entrySet()) {
             ClientProgram cp = entry.getKey();
-            if (
-                    cp.getTitle().equals(program.getTitle()) &&
-                            cp.getGenre() == program.getGenre() &&
-                            cp.getDevices() >= program.getDevices()
-            ) {
+            if (cp.getTitle().equals(program.getTitle()) && cp.getGenre() == program.getGenre() && cp.getDevices() >= program.getDevices()) {
                 return entry.getValue() * program.getDevices();
             }
         }
         throw new RuntimeException("Unable to find price for program: " + program);
-
     }
-
 
     private void updatePaidPrice(ClientProgram program) {
         double pricePaid = program.getSingularPrice();

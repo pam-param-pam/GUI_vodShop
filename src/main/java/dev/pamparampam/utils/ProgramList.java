@@ -1,4 +1,4 @@
-package dev.pamparampam;
+package dev.pamparampam.utils;
 
 import dev.pamparampam.Films.ClientProgram;
 

@@ -1,8 +1,6 @@
-package dev.pamparampam;
+package dev.pamparampam.utils;
 
-import dev.pamparampam.Films.ClientProgram;
 import dev.pamparampam.Films.Program;
-import dev.pamparampam.utils.GENRE;
 
 import java.util.HashMap;
 

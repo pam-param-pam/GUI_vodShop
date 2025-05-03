@@ -1,14 +1,10 @@
 package dev.pamparampam;
 
 import dev.pamparampam.Films.ClientProgram;
-import dev.pamparampam.Films.Program;
-import dev.pamparampam.utils.GENRE;
-import dev.pamparampam.utils.GoofyBool;
-import dev.pamparampam.utils.PaymentType;
+import dev.pamparampam.utils.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
-import java.util.List;
 import java.util.UUID;
 
 import static dev.pamparampam.utils.GoofyBool.*;

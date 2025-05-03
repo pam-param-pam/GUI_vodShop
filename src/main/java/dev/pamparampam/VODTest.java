@@ -2,6 +2,7 @@ package dev.pamparampam;
 
 import dev.pamparampam.Films.*;
 import dev.pamparampam.utils.GENRE;
+import dev.pamparampam.utils.Pricelist;
 
 import static dev.pamparampam.utils.GENRE.*;
 import static dev.pamparampam.utils.GoofyBool.*;

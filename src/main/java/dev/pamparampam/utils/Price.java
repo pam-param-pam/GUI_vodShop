@@ -1,8 +1,4 @@
-package dev.pamparampam;
-
-import dev.pamparampam.utils.GENRE;
-
-import java.util.Objects;
+package dev.pamparampam.utils;
 
 public class Price {
     private Integer subscriptionPrice = null;
